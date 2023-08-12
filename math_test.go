@@ -10,7 +10,7 @@ func TestSoma(t *testing.T) {
 }
 
 func TestSub(t *testing.T) {
-	total := Soma(50, 40)
+	total := Sub(50, 40)
 	if total != 10 {
 		t.Errorf("Sub(50, 40) = %d; want 10", total)
 	}
