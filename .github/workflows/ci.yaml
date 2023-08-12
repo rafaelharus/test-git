@@ -4,7 +4,7 @@ on:
         branches:
             - develop
 jobs:
-    check-app:
+    build-and-test:
         runs-on: ubuntu-latest
         strategy:
             matrix:
@@ -15,4 +15,3 @@ jobs:
               with:
                   go-version: ${{ matrix.go }}
             - run: go test
-            - run: go run math.go
